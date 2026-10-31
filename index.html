@@ -1,1 +1,207 @@
-a placeholder file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Pantheon</title>
+<script data-goatcounter="https://steffenhuck.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --yellow: #f7c59f;
+    --ink: #111111;
+    --accent: #e63946;
+    --paper: #fffaf0;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--yellow);
+    color: var(--ink);
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  header {
+    margin-bottom: 16px;
+  }
+  .kicker {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    color: var(--ink);
+    margin: 0 0 6px;
+  }
+  h1 {
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-size: clamp(3.2rem, 14vw, 6rem);
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .lede {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 18px 0 0;
+    max-width: 38ch;
+  }
+  .back {
+    display: inline-block;
+    margin: 22px 0 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.78rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .back .arw { color: var(--accent); }
+  .back:hover { color: var(--accent); }
+  .rule {
+    height: 6px;
+    background: var(--ink);
+    margin: 30px 0 8px;
+  }
+  ul.games {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 6px solid var(--ink);
+  }
+  ul.games li {
+    border-bottom: 2px solid var(--ink);
+  }
+  ul.games li:last-child {
+    border-bottom: none;
+  }
+  a.game {
+    text-decoration: none;
+    color: var(--ink);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 26px 8px 26px 0;
+    transition: background 0.12s ease, padding-left 0.12s ease;
+  }
+  a.game:hover {
+    background: var(--ink);
+    color: var(--paper);
+    padding-left: 16px;
+  }
+  a.game:hover .num { color: var(--accent); }
+  a.game:hover .desc { color: var(--paper); }
+  .num {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 1.6rem;
+    color: var(--accent);
+    flex: 0 0 auto;
+    width: 1.6em;
+    text-align: center;
+  }
+  .body { flex: 1 1 auto; }
+  .title {
+    display: block;
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(1.6rem, 5vw, 2.3rem);
+    line-height: 1.0;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+  }
+  .desc {
+    display: block;
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    max-width: 52ch;
+  }
+  footer {
+    margin-top: 56px;
+    font-weight: 700;
+    text-transform: lowercase;
+    letter-spacing: 0.42em;
+    font-size: 0.82rem;
+  }
+  footer a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 1px;
+  }
+  footer a:hover { background: var(--accent); color: var(--paper); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker">Play in your browser</p>
+      <h1>The Pantheon</h1>
+      <p class="lede">Great papers, off the pedestal and into your hands. Each one a game built from what the paper found.</p>
+      <a class="back" href="https://steffenhuck.github.io/games"><span class="arw">&larr;</span> All games</a>
+    </header>
+
+    <div class="rule"></div>
+
+    <ul class="games">
+      <li>
+        <a class="game" href="https://steffenhuck.github.io/paper-to-game/einstein/einsteins-flower-merchant.html">
+          <span class="num" aria-hidden="true">1</span>
+          <span class="body">
+            <span class="title">Einstein's Flower Merchant</span>
+            <span class="desc">Bern, 1905. You sell flowers to the stars, by rocket. The faster you fly, the fresher they land and the later you are paid. Die rich.</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="game" href="https://steffenhuck.github.io/paper-to-game/benjamin/benjamins-veil.html">
+          <span class="num" aria-hidden="true">2</span>
+          <span class="body">
+            <span class="title">Benjamin's Veil</span>
+            <span class="desc">Paris, 1936. One painted face with a halo, six ages, a new way to copy it each age. Show it and spend the halo. Keep it and watch the eyes of the age change.</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="game" href="https://steffenhuck.github.io/paper-to-game/cantor/cantors-bargain.html">
+          <span class="num" aria-hidden="true">3</span>
+          <span class="body">
+            <span class="title">Cantor's Bargain</span>
+            <span class="desc">Halle, 1891. The Great Lister's endless book has every row of m's and w's, he says. Write one it doesn't. You can't. Then Cantor makes you an offer.</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="game" href="https://steffenhuck.github.io/paper-to-game/dna/watsons-cardboard.html">
+          <span class="num" aria-hidden="true">4</span>
+          <span class="body">
+            <span class="title">Watson's Cardboard</span>
+            <span class="desc">Cambridge, 1953. Four bases cut from card, one chain given. Build the other so the rails stay straight. Then see whether it copies.</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="game" href="https://steffenhuck.github.io/paper-to-game/hubble/hubbles-twelve-nights.html">
+          <span class="num" aria-hidden="true">5</span>
+          <span class="body">
+            <span class="title">Hubble's Twelve Nights</span>
+            <span class="desc">Mount Wilson, 1929. Twelve nights on the 100-inch. Swing the telescope, judge how far, turn the measuring screw, pencil a dot. Then say how fast.</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <footer>
+      <a href="https://steffenhuck.github.io/">steffen huck</a>
+    </footer>
+  </div>
+</body>
+</html>
